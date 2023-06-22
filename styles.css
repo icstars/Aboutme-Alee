@@ -1,6 +1,13 @@
 h1 {
-  background-color: red;
+  background-color: black;
 }
 body {
-  background-color: rgb(152, 155, 156);
+  background-color: white;
+}
+body {
+  background: #474646;
+  color: #fdfdfd;
+  font-weight: bold;
+  font-family: Arial;
+  text-align: center;
 }
