@@ -61,5 +61,5 @@ let prompt2 = prompt("How old are you?");
 let prompt3 = prompt("What is your hobby");
 
 alert(
-  `Hi my name is ${prompt1}, I am ${prompt2} and I like playing ${prompt3}.`
+  `Hi my name is ${prompt1}, I am ${prompt2}, and I like playing ${prompt3}.`
 );
