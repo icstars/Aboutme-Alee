@@ -204,19 +204,110 @@
 
 // HOMEWORK FOR COLLIN
 
-let randomNumber = Math.floor(Math.random() * 11);
-console.log(randomNumber);
+// let randomNumber = Math.floor(Math.random() * 11);
+// console.log(randomNumber);
 
-let prompt1 = prompt("Pick a number 1-10");
+// let prompt1 = prompt("Pick a number 1-10");
 
-if (randomNumber == prompt1) {
-  alert("Correct");
-} else {
-  alert("Incorrect");
-}
+// if (randomNumber == prompt1) {
+//   alert("Correct");
+// } else {
+//   alert("Incorrect");
+// }
 
 // // Challenge: Guess the Number
 // The program generates a random number between 1 and 10.
 // The user is prompted to guess the number.
 // If the user's guess matches the generated number, an alert is shown with a success message.
 // If the user's guess is incorrect, an alert is shown with a failure message.
+
+/////// LOOPS 6/23/2023
+
+// variables and data types
+let myName = "Alee";
+console.log(myName);
+console.log(`Hello ${myName}`);
+
+// conditionals
+if (myName === "Alee") {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+// for
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+// if youre in an infinte loop, your machine will crash***
+// let 1 = 0 if i is less than 10 i adds 1 word form**
+
+// arrays and methods
+let team = ["Alee", "Audry", "Edwin", "lucycan"];
+console.log(team);
+console.log(team.length);
+
+// push
+console.log(team.push("Derrick", "John"));
+console.log(team);
+
+/// pop
+console.log(team.pop());
+console.log(team);
+
+///join
+console.log(team.join(""));
+
+///slice returns a new array
+console.log(team);
+console.log(team.slice(1, 3));
+
+///split
+let team1 = "john,mike,kiersten,lucy";
+console.log(team1);
+let teamSplit = team1.split(",");
+console.log(teamSplit);
+
+///looping through an array
+console.log(team);
+for (i = 0; i < team.length; i++) {
+  console.log(`Hello ${team[i]}`);
+}
+
+let roles = [
+  "Tech Manager",
+  "TechFellow",
+  "Placement Manager",
+  "Program Manager",
+  "Intern",
+];
+
+///Hello my name is Lucycan and I am the Tech Manager
+
+for (i = 0; i < team.length; i++) {
+  console.log;
+  console.log(`Hello my name is ${team[i]} and I am the ${roles[i]}`);
+}
+
+///CHALLENGE:
+// using only what we habe learned this far, working with
+// enter your teams names and rolse into your prompt
+//populate those values in an array
+//write a for loop tha tlogs "hello my name is <name and i am a role
+//you must get a log for every team member
+
+let team3 = prompt("Enter your names");
+console.log(team3);
+
+let team3Roles = prompt("Enter your roles");
+console.log(team3Roles);
+
+let nameSplit = team3.split(",");
+console.log(nameSplit);
+
+let roleSplit = team3Roles.split(",");
+console.log(roleSplit);
+
+for (i = 0; i < nameSplit.length; i++) {
+  console.log(`Hello my name is ${nameSplit[i]} and I am the ${roleSplit[i]}`);
+}
