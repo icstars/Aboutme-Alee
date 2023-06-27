@@ -221,93 +221,203 @@
 // If the user's guess matches the generated number, an alert is shown with a success message.
 // If the user's guess is incorrect, an alert is shown with a failure message.
 
-/////// LOOPS 6/23/2023
+///////////////////// LOOPS 6/23/2023 ////////////////////////////
 
-// variables and data types
-let myName = "Alee";
-console.log(myName);
-console.log(`Hello ${myName}`);
+// // variables and data types
+// let myName = "Alee";
+// console.log(myName);
+// console.log(`Hello ${myName}`);
 
-// conditionals
-if (myName === "Alee") {
-  console.log(true);
-} else {
-  console.log(false);
-}
+// // conditionals
+// if (myName === "Alee") {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
 
-// for
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-}
+// // for loop**
+// // Initializer is what's in the parenthesis
+// // < 5 is condition**
+// // iterator
+
+// // const arr = [1,2,3]
+
+// console.log(arr[2])
+
+// for (let initializer = 0; initializer < arr.length; initializer++) {
+// console.log(arr[initializer])
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
 // if youre in an infinte loop, your machine will crash***
 // let 1 = 0 if i is less than 10 i adds 1 word form**
 
 // arrays and methods
-let team = ["Alee", "Audry", "Edwin", "lucycan"];
-console.log(team);
-console.log(team.length);
+// let team = ["Alee", "Audry", "Edwin", "lucycan"];
+// console.log(team);
+// console.log(team.length);
 
-// push
-console.log(team.push("Derrick", "John"));
-console.log(team);
+// // push
+// console.log(team.push("Derrick", "John"));
+// console.log(team);
 
-/// pop
-console.log(team.pop());
-console.log(team);
+// /// pop
+// console.log(team.pop());
+// console.log(team);
 
-///join
-console.log(team.join(""));
+// ///join
+// console.log(team.join(""));
 
-///slice returns a new array
-console.log(team);
-console.log(team.slice(1, 3));
+// ///slice returns a new array
+// console.log(team);
+// console.log(team.slice(1, 3));
 
-///split
-let team1 = "john,mike,kiersten,lucy";
-console.log(team1);
-let teamSplit = team1.split(",");
-console.log(teamSplit);
+// ///split
+// let team1 = "john,mike,kiersten,lucy";
+// console.log(team1);
+// let teamSplit = team1.split(",");
+// console.log(teamSplit);
 
-///looping through an array
-console.log(team);
-for (i = 0; i < team.length; i++) {
-  console.log(`Hello ${team[i]}`);
+// ///looping through an array
+// console.log(team);
+// for (i = 0; i < team.length; i++) {
+//   console.log(`Hello ${team[i]}`);
+// }
+
+// let roles = [
+//   "Tech Manager",
+//   "TechFellow",
+//   "Placement Manager",
+//   "Program Manager",
+//   "Intern",
+// ];
+
+// ///Hello my name is Lucycan and I am the Tech Manager
+
+// for (i = 0; i < team.length; i++) {
+//   console.log;
+//   console.log(`Hello my name is ${team[i]} and I am the ${roles[i]}`);
+// }
+
+// ///CHALLENGE:
+// // using only what we habe learned this far, working with
+// // enter your teams names and rolse into your prompt
+// //populate those values in an array
+// //write a for loop tha tlogs "hello my name is <name and i am a role
+// //you must get a log for every team member
+
+// let team3 = prompt("Enter your names");
+// console.log(team3);
+
+// let team3Roles = prompt("Enter your roles");
+// console.log(team3Roles);
+
+// let nameSplit = team3.split(",");
+// console.log(nameSplit);
+
+// let roleSplit = team3Roles.split(",");
+// console.log(roleSplit);
+
+// for (i = 0; i < nameSplit.length; i++) {
+//   console.log(`Hello my name is ${nameSplit[i]} and I am the ${roleSplit[i]}`);
+// }
+
+// /////////////////////// 6/26 FUNCTIONS ///////////////////////////
+
+// //ANCHOR - FUNCTIONS
+
+// function thisIsTheFunctionName(name) {
+//   console.log(name);
+// }
+
+// // TYPE THE FUNCTION NAME FOLLOWED BY PARENTHESIS
+// thisIsTheFunctionName("collin"); // whatever is in the parenthesis is an argument
+
+// //RETURN STATEMENT
+
+// function thisIsTheFunctionName(name) {
+//   return name; //replace console.log with return()
+// }
+
+// let name = thisIsTheFunctionName("vince");
+// let name2 = thisIsTheFunctionName("collin");
+
+// let array2 = [1, 2, 3, 4, 5, 6];
+
+// function iterateThroughArray(arr) {
+//   for (let initializer = 0; initializer < arr.length; initializer++) {
+//     console.log(array2[initializer]);
+//   }
+// }
+
+// iterateThroughArray(array3)
+
+// function sum(num1, num2) {
+//   console.log(num1 + num2)
+// }
+
+// // () parameters/place holders
+
+// sum(1,3) // would equal 4
+
+// function helloWorld() {
+//   console.log('hello world')
+// }
+
+// helloWorld()
+
+// // ex
+
+// function pho(ingredient1, ingredient2) {
+//   console.log(ingredient1 / ingredient2)
+// }
+
+// // delcare as a
+// const function1 = function() {
+
+// }
+
+// // ARROW FUNCTION "CAN USE FOR REGULAR FUNCTION"
+// const function2 = () => {
+
+// }
+
+//// const function21 = function(arr) {
+////   for (let initializer = 0; initializer < arr.length, initializer++) {
+////   console.log(arr[initializer]);
+////   }
+////  }
+//// let array10 = [1,2,3,4,5]
+
+// // function21(array10) //**TURNS ALL THE "arr" to function21
+
+// // more examples
+
+// let users = ['collin', 'vince', 'haylee']
+
+// userinput = prompt('what is your name')
+
+// function blockScope() {
+//   let x = 0  // You CANT access in GLOBAL SCOPE/not in the {}
+// }
+
+// console.log(x)
+
+///////////////////////// ASSIGNMENT/CHALLENGE !!! /////////////////////////////
+
+//let team = ["Lucycan", "Collin", "Mark", "Cortez"];
+///this array needs to be in block scope not global scope
+///create a function that passes another name as an argument to the function parameter
+/// the function adds the name that you passed to the array
+/// return the array
+/// expected output: ["Lucycan", "Collin", "Mark", "Cortez", "Blanca"]
+
+function blockScope(name) {
+  let team = ["Lucycan", "Collin", "Mark", "Cortez"];
+  team.push(name);
+  console.log(team);
 }
-
-let roles = [
-  "Tech Manager",
-  "TechFellow",
-  "Placement Manager",
-  "Program Manager",
-  "Intern",
-];
-
-///Hello my name is Lucycan and I am the Tech Manager
-
-for (i = 0; i < team.length; i++) {
-  console.log;
-  console.log(`Hello my name is ${team[i]} and I am the ${roles[i]}`);
-}
-
-///CHALLENGE:
-// using only what we habe learned this far, working with
-// enter your teams names and rolse into your prompt
-//populate those values in an array
-//write a for loop tha tlogs "hello my name is <name and i am a role
-//you must get a log for every team member
-
-let team3 = prompt("Enter your names");
-console.log(team3);
-
-let team3Roles = prompt("Enter your roles");
-console.log(team3Roles);
-
-let nameSplit = team3.split(",");
-console.log(nameSplit);
-
-let roleSplit = team3Roles.split(",");
-console.log(roleSplit);
-
-for (i = 0; i < nameSplit.length; i++) {
-  console.log(`Hello my name is ${nameSplit[i]} and I am the ${roleSplit[i]}`);
-}
+let blanca = "blanca";
+blockScope(blanca);
